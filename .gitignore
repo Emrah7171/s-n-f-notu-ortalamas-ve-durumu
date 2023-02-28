@@ -1,0 +1,33 @@
+public class PROJE1 {
+    public static void main(String[] args) {
+        /* Dersler : Matematik, Fizik, Türkçe, Kimya, Müzik
+        Geçme Notu : 55
+        Eğer girilen ders notları 0 veya 100 arasında değil ise ortalamaya katılmasın.*/
+        int mat,fiz,kim,tur,mzk;
+        Scanner ınput=new Scanner(System.in);
+
+        System.out.print("TÜRKÇE:");
+        tur=ınput.nextInt();
+            System.out.print("MATAMATİK:");
+            mat =ınput.nextInt();
+                System.out.print("FİZİK:");
+                fiz=ınput.nextInt();
+                    System.out.print("KİMYA:");
+                    kim=ınput.nextInt();
+                        System.out.print("MÜZİK:");
+                        mzk=ınput.nextInt();
+        double ort =(mat+fiz+kim+mzk+tur)/5;
+        System.out.println("ORTALAMA"+ort);
+
+          if (100>= ort && ort>=55){
+        System.out.print("GECTİ");
+    } else if (ort<=54 && ort>=0) {
+       System.out.print("KALDI");
+    }else
+        System.out.print("HATALI BİR GİRİŞ");
+
+
+
+
+
+    }
